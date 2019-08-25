@@ -5,13 +5,71 @@ body {
   margin: 100px auto;
 }
 .wrapper {
+  display: flex;
   width: 900px;
   margin: 0 auto;
 }
+.wrapper .hits {
+  flex-grow: 1;
+  color: gray;
+}
+.wrapper .score span#points {
+  font-size: 16px;
+}
+.wrapper .score {
+  flex-grow: 2;
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .misses {
+  flex-grow: 1;
+  text-align: right;
+  color: gray;
+}
+
 #canvas {
   border: 1px solid #333;
   background-image: url("https://cdn.glitch.com/b0a623c1-b66f-42a5-8c93-9efc6083844e%2Fbackground-06.jpg?v=1566419649824");
   background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
+}
+
+.slidecontainer {
+  width: 900px; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4caf50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }

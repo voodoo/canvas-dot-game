@@ -7,10 +7,35 @@
 
   <body>
     <div class="wrapper">
-       <h1> Hits: <span id="hits">0</span></div></h1>
+      <div class="hits">Hits: <span id="hits">0</span></div>
+      <div class="score">
+        Score: <span id="score">0</span><br /><span id="points">0</span>
+      </div>
+      <div class="misses">Misses: <span id="misses">0</span></div>
     </div>
     <canvas id="canvas" width="900" height="600"></canvas>
-   
-    <script type="text/javascript" src="index.js"></script>
+    <div class="slidecontainer wrapper">
+      <input
+        type="range"
+        min="1"
+        max="5"
+        value="3"
+        class="slider"
+        id="rangeOfDescent"
+      />
+    </div>
+    <div style="width: 900px; text-align:center;">
+      Speed :
+      <span id="range">
+        3
+      </span>
+    </div>
+
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/circle.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
   </body>
 </html>
