@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  font-family: Impact, Charcoal, sans-serif;
+  color: white;
+  margin: 100px auto;
+}
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+#canvas {
+  border: 1px solid #333;
+  background-image: url("https://cdn.glitch.com/b0a623c1-b66f-42a5-8c93-9efc6083844e%2Fbackground-06.jpg?v=1566419649824");
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
