@@ -1,5 +1,6 @@
 
 function animate() {
+    if(stopped) return
     var time = Date.now();
   
 

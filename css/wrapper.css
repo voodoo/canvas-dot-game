@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+}
+.wrapper .hits {
+  flex-grow: 1;
+  color: gray;
+}
+.wrapper .score span#points {
+  font-size: 16px;
+}
+.wrapper .score {
+  flex-grow: 2;
+  font-size: 36px;
+  text-align: center;
+}
+.wrapper .misses {
+  flex-grow: 1;
+  text-align: right;
+  color: gray;
+}

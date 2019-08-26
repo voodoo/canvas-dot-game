@@ -14,6 +14,20 @@ var score = 0
 var misses = 0
 var missPoints = 50
 var points = 0
-
+var stopped = false
 animate()
+
+function settings(){
+    var settings = document.getElementById('canvasSettings')
+    var show = settings.style.display
+    
+    if(show == 'block'){
+        stopped = false
+        animate()
+        settings.style.display = 'none'
+    } else {
+        stopped = true
+        settings.style.display = 'block'
+    }
+}
 
